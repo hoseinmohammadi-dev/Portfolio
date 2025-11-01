@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function HomePage() {
   return (
-    <div>Portfolio</div>
+    <main className='container mx-auto bg-(--bg-color)'>
+      <header className="w-full h-screen bg-[url('/image/grid-pattern.svg')] bg-cover bg-center">
+      
+      </header>
+    </main>
   )
 }
