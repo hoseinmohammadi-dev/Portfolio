@@ -39,7 +39,7 @@ export default function HomePage() {
               style={{ background: "var(--fill-gradient)" }}>
               <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-150' />
               <img src='/image/sectionInput.png' alt='' className='absolute -bottom-10 -right-15 md:-right-1 lg:-right-13 w-auto h-full scale-50 md:scale-80 lg:scale-50' />
-
+              <p className='text-[18px] sm:text-[22px] md:text-[26px] lg:text-[16px] mt-6 sm:mt-10 md:mt-6 ml-4 lg:ml-4 md:w-[80%] lg:w-[90%]'>Tech enthusiast with a passion for development.</p>
             </div>
 
             <div className='order-3 relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden'
