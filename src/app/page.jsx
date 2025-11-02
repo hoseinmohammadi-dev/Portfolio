@@ -24,9 +24,10 @@ export default function HomePage() {
               <p className='absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 text-[14px] scale-160 sm:scale-200 md:scale-220'>I’m very flexible work</p>
             </div>
 
-            <div className='relative rounded-(--border-radius) h-[150px] md:h-[230px] overflow-hidden' style={{ background: "var(--fill-gradient)" }}>
-              <img src='/image/Group.png' alt='' className='absolute bottom-0 right-0 w-auto h-full' />
-              <p className='absolute top-1/2 -translate-y-2/6 left-5 text-[22px] sm:text-[24px] md:text-[26px] lg:text-[32px]'>My Tech Stack</p>
+            <div className='relative rounded-(--border-radius) h-[150px] md:h-[230px] overflow-hidden opacity-90' style={{ background: "var(--fill-gradient)" }}>
+              <img src='/image/Group.png' alt='' className='absolute bottom-0 -right-4 lg:-right-16 xl:right-0 w-auto h-full'/>
+              <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-110' />
+              <p className='absolute top-1/2 -translate-y-1/2 left-5 text-[22px] sm:text-[24px] md:text-[26px] lg:text-[32px]'>My Tech Stack</p>
             </div>
           </div>
         </section>
@@ -39,7 +40,7 @@ export default function HomePage() {
               style={{ background: "var(--fill-gradient)" }}>
               <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-150' />
               <img src='/image/sectionInput.png' alt='' className='absolute -bottom-10 -right-15 md:-right-1 lg:-right-13 w-auto h-full scale-50 md:scale-80 lg:scale-50' />
-              <p className='text-[18px] sm:text-[22px] md:text-[26px] lg:text-[16px] mt-6 sm:mt-10 md:mt-6 ml-4 lg:ml-4 md:w-[80%] lg:w-[90%]'>Tech enthusiast with a passion for development.</p>
+              <p className='text-[18px] sm:text-[22px] md:text-[26px] lg:text-[16px] mt-6 sm:mt-10 md:mt-6 ml-4 lg:ml-4 md:w-[80%] lg:w-[90%] relative z-10'>Tech enthusiast with a passion for development.</p>
             </div>
 
             <div className='order-3 relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden'
