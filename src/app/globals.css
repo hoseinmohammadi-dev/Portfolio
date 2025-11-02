@@ -6,7 +6,7 @@
   --secondary-text: #bec1ddd3;
   --title-text: #cbacf9;
   --link-text:#C1C2D3;
-  --fill-gradient: linear-gradient(80deg, #04071D, #0C0E23);
+  --fill-gradient: linear-gradient(-49deg, #04071D, #0C0E23);
   --stoke-color:#6971a237;
   --border-radius: 14px;
 }
@@ -36,6 +36,7 @@
 }
 
 body {
+  color: var(--primary-text);
   font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
