@@ -5,14 +5,15 @@
   --primary-text: #ffffff;
   --secondary-text: #bec1dd;
   --title-text: #cbacf9;
+  --link-text:#C1C2D3;
   --fill-gradient: linear-gradient(80deg, #04071D, #0C0E23);
+  --stoke-color:#6971a237;
   --border-radius: 14px;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter-Medium.woff2') format('woff2'),
-    url('/fonts/Inter-Medium.woff') format('woff');
+  src: url('/font/Inter-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -20,8 +21,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter-Bold.woff2') format('woff2'),
-    url('/fonts/Inter-Bold.woff') format('woff');
+  src: url('/font/Inter-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
