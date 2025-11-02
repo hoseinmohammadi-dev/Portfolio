@@ -21,7 +21,6 @@ export default function HomePage() {
             <div className='relative rounded-(--border-radius) h-[170px] md:h-[230px] overflow-hidden opacity-80'
               style={{ background: "var(--fill-gradient)" }}>
               <img src='/image/Pagination.png' alt='' className='absolute bottom-0 left-0 w-full h-auto' />
-              {/* <p className='absolute top-5 left-1/2 -translate-x-1/2 text-[20px] md:text-[32px]'>I’m very flexible work</p> */}
               <p className='absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 text-[14px] scale-160 sm:scale-200 md:scale-220'>I’m very flexible work</p>
             </div>
 
@@ -35,31 +34,34 @@ export default function HomePage() {
 
 
         <section className='mx-[3%] lg:mx-[6%] flex flex-col lg:flex-row gap-5 justify-center mt-5'>
-          <div className='w-full lg:w-3/12 flex gap-5 flex-col'>
+          <div className='order-2 w-full lg:w-3/12 flex gap-5 flex-col'>
             <div className='relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden opacity-80'
               style={{ background: "var(--fill-gradient)" }}>
               <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-150' />
               <img src='/image/sectionInput.png' alt='' className='absolute -bottom-10 -right-15 md:-right-1 lg:-right-13 w-auto h-full scale-50 md:scale-80 lg:scale-50' />
-              
+
             </div>
 
-            <div className='relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden'
+            <div className='order-3 relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden'
               style={{ background: "var(--fill-gradient)" }}>
               <img src='/image/backgroundblobservicepng.png' alt='' className='absolute w-auto h-full' />
               <p className='relative flex justify-center top-4 lg:top-3 text-[18px] sm:text-[24px] lg:text-[17px]'>Do you want to start <br className='sm:hidden lg:block' /> a project together?</p>
               <div className='relative flex gap-3.5 justify-center items-center  -bottom-7 sm:-bottom-9 lg:-bottom-6 *:w-7 *:h-7 *:flex *:justify-center *:items-center *:rounded-[5px] *:cursor-pointer'>
-                <a className='border border-(--stoke-color)' href='https://github.com/hoseinmohammadi-dev'><Image src='/icon/Vector-2.svg' width={17} height={17} alt='social'/></a>
-                <a className='border border-(--stoke-color)' href='https://wa.me/989180888233'><Image src='/icon/Vector-3.svg' width={17} height={17} alt='social'/></a>
-                <a className='border border-(--stoke-color)' href='https://instagram.com/hoseinmdev'><Image src='/icon/Vector.svg' width={17} height={17} alt='social'/></a>
+                <a className='border border-(--stoke-color)' href='https://github.com/hoseinmohammadi-dev'><Image src='/icon/Vector-2.svg' width={17} height={17} alt='social' /></a>
+                <a className='border border-(--stoke-color)' href='https://wa.me/989180888233'><Image src='/icon/Vector-3.svg' width={17} height={17} alt='social' /></a>
+                <a className='border border-(--stoke-color)' href='https://instagram.com/hoseinmdev'><Image src='/icon/Vector.svg' width={17} height={17} alt='social' /></a>
               </div>
             </div>
           </div>
 
-          <div className='relative w-full lg:w-9/12 h-[150px] sm:h-[200px] md:h-[250px] rounded-(--border-radius) overflow-hidden'
+          <div className='order-1 lg:order-4 relative w-full lg:w-9/12 h-[150px] sm:h-[200px] md:h-[250px] rounded-(--border-radius) overflow-hidden'
             style={{ background: "var(--fill-gradient)" }}>
             <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-150' />
             <img src='/image/ImageCode.png' alt='' className='absolute -bottom-10 -right-10 lg:-bottom-10 lg:right-0 w-auto h-full scale-80 lg:scale-100' />
-
+            <div className='relative top-1/2 -translate-y-1/2 left-4'>
+              <p className='text-[8px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-light text-(--secondary-text)'>THE INSIDE SCOOP</p>
+              <p className='text-[18px] sm:text-[22px] md:text-[26px] lg:text-[32px]'>Constantly improving<br />crafting clean code</p>
+            </div>
           </div>
         </section>
       </main>
