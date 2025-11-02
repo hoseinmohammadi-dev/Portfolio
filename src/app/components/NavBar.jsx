@@ -8,8 +8,8 @@ export default function NavBar() {
 
   return (
     <section
-      className="mx-auto mt-11 w-[95%] sm:w-[495px] h-[66px] rounded-(--border-radius) border border-(--stoke-color) py-5 px-3 sm:px-6"
-      style={{ background: "var(--fill-gradient)" }}
+      className="fixed -top-5 left-1/2 z-20 -translate-x-1/2 mx-auto mt-11 w-[95%] sm:w-[495px] h-[66px] rounded-(--border-radius) border border-(--stoke-color) py-5 px-3 sm:px-6 backdrop-blur-sm"
+      style={{ background: "var(--fill-gradient)/99" }}
     >
       <ul className="flex justify-between text-(--link-text) text-[14px] sm:text-[16px]">
         {navItems.map((item) => (

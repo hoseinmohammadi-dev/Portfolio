@@ -3,12 +3,20 @@
 :root {
   --bg-color: #000319;
   --primary-text: #ffffff;
-  --secondary-text: #bec1dd;
+  --secondary-text: #bec1ddd3;
   --title-text: #cbacf9;
   --link-text:#C1C2D3;
   --fill-gradient: linear-gradient(80deg, #04071D, #0C0E23);
   --stoke-color:#6971a237;
   --border-radius: 14px;
+}
+
+@font-face {
+  font-family: 'InterR';
+  src: url('/font/Inter-Regular.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
