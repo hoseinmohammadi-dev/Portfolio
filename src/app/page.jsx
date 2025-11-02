@@ -1,11 +1,12 @@
 import React from 'react'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
     <>
-      <main className="w-full h-[150vh]">
+      <main className="w-full h-[350vh]">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-screen bg-[url('/image/grid-pattern.svg')] bg-cover bg-no-repeat z-0"></div>
         <div className="hidden sm:block absolute top-0 left-0 w-2/3 h-2/3 bg-[url('/image/spotlight.png')] bg-contain bg-no-repeat"></div>
         <div className="hidden sm:block absolute top-0 right-0 w-2/3 h-2/3 bg-[url('/image/spotlight.png')] bg-contain bg-no-repeat scale-x-[-1]"></div>
@@ -33,22 +34,34 @@ export default function HomePage() {
 
 
 
-
-
-        {/* <section className='mx-[3%] flex  flex-col sm:flex-row gap-5 justify-center mt-10 sm:mt-30'>
-          <div className='w-full sm:w-5/12 flex gap-5 flex-col '>
-            <div className='rounded-(--border-radius) h-[200px]' style={{ background: "var(--fill-gradient)" }}>
-              1
+        <section className='mx-[3%] lg:mx-[6%] flex flex-col lg:flex-row gap-5 justify-center mt-5'>
+          <div className='w-full lg:w-3/12 flex gap-5 flex-col'>
+            <div className='relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden opacity-80'
+              style={{ background: "var(--fill-gradient)" }}>
+              <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-150' />
+              <img src='/image/sectionInput.png' alt='' className='absolute -bottom-10 -right-15 md:-right-1 lg:-right-13 w-auto h-full scale-50 md:scale-80 lg:scale-50' />
+              
             </div>
-            <div className='rounded-(--border-radius) h-[200px]' style={{ background: "var(--fill-gradient)" }}>
-              2
+
+            <div className='relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden'
+              style={{ background: "var(--fill-gradient)" }}>
+              <img src='/image/backgroundblobservicepng.png' alt='' className='absolute w-auto h-full' />
+              <p className='relative flex justify-center top-4 lg:top-3 text-[18px] sm:text-[24px] lg:text-[17px]'>Do you want to start <br className='sm:hidden lg:block' /> a project together?</p>
+              <div className='relative flex gap-3.5 justify-center items-center  -bottom-7 sm:-bottom-9 lg:-bottom-6 *:w-7 *:h-7 *:flex *:justify-center *:items-center *:rounded-[5px] *:cursor-pointer'>
+                <a className='border border-(--stoke-color)' href='https://github.com/hoseinmohammadi-dev'><Image src='/icon/Vector-2.svg' width={17} height={17} alt='social'/></a>
+                <a className='border border-(--stoke-color)' href='https://wa.me/989180888233'><Image src='/icon/Vector-3.svg' width={17} height={17} alt='social'/></a>
+                <a className='border border-(--stoke-color)' href='https://instagram.com/hoseinmdev'><Image src='/icon/Vector.svg' width={17} height={17} alt='social'/></a>
+              </div>
             </div>
           </div>
-          <div className='w-full sm:w-6/12 h-[400px] rounded-(--border-radius) '
+
+          <div className='relative w-full lg:w-9/12 h-[150px] sm:h-[200px] md:h-[250px] rounded-(--border-radius) overflow-hidden'
             style={{ background: "var(--fill-gradient)" }}>
-            0
+            <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-150' />
+            <img src='/image/ImageCode.png' alt='' className='absolute -bottom-10 -right-10 lg:-bottom-10 lg:right-0 w-auto h-full scale-80 lg:scale-100' />
+
           </div>
-        </section> */}
+        </section>
       </main>
     </>
   )
