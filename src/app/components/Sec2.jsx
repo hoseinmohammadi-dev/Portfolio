@@ -18,7 +18,7 @@ export default function Sec2() {
                         <div className='mt-2 mx-0.5 flex justify-between items-center'>
                             <div className='flex *:-mr-1.5 *:w-6.5 *:h-6.5 sm:*:w-8 sm:*:h-8 md:*:w-6.5 md:*:h-6.5 lg:*:w-8 lg:*:h-8'>
                                 <Image src="/icon/react.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
-                                <Image src="/icon/nextJs.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
+                                <Image src="/icon/nextjs.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
                                 <Image src="/icon/materialui.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
                                 <Image src="/icon/tailwindcss.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
                                 <Image src="/icon/Rechart.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
@@ -40,7 +40,7 @@ export default function Sec2() {
                         <div className='mt-2 mx-0.5 flex justify-between items-center'>
                             <div className='flex *:-mr-1.5 *:w-6.5 *:h-6.5 sm:*:w-8 sm:*:h-8 md:*:w-6.5 md:*:h-6.5 lg:*:w-8 lg:*:h-8'>
                                 <Image src="/icon/react.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
-                                <Image src="/icon/nextJs.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
+                                <Image src="/icon/nextjs.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
                                 <Image src="/icon/tailwindcss.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
                                 <Image src="/icon/zustand.svg" width={10} height={10} alt='devTools' className='border border-(--stoke-color) rounded-full p-0.5 z-20' style={{ background: "var(--fill-gradient)" }}></Image>
                             </div>
