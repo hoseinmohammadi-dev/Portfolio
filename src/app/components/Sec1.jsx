@@ -42,6 +42,7 @@ export default function Sec1() {
                 <a className='border border-(--stoke-color)' href='https://github.com/hoseinmohammadi-dev' target='_blank'><Image src='/icon/Vector-2.svg' width={17} height={17} alt='social' /></a>
                 <a className='border border-(--stoke-color)' href='https://wa.me/989180888233' target='_blank'><Image src='/icon/Vector-3.svg' width={17} height={17} alt='social' /></a>
                 <a className='border border-(--stoke-color)' href='https://instagram.com/hoseinmdev' target='_blank'><Image src='/icon/Vector.svg' width={17} height={17} alt='social' /></a>
+                <a className='border border-(--stoke-color)' href='https://www.linkedin.com/in/hoseinmohammadi-dev' target='_blank'><Image src='/icon/Linkedin.svg' width={17} height={17} alt='social' /></a>
               </div>
             </div>
           </div>
