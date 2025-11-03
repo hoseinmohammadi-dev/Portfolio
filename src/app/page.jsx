@@ -1,69 +1,61 @@
 import React from 'react'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
-import Image from 'next/image'
+import Sec1 from './components/Sec1'
 
 export default function HomePage() {
   return (
     <>
-      <main className="w-full h-[350vh]">
+      <main className="w-full">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-screen bg-[url('/image/grid-pattern.svg')] bg-cover bg-no-repeat z-0"></div>
         <div className="hidden sm:block absolute top-0 left-0 w-2/3 h-2/3 bg-[url('/image/spotlight.png')] bg-contain bg-no-repeat"></div>
         <div className="hidden sm:block absolute top-0 right-0 w-2/3 h-2/3 bg-[url('/image/spotlight.png')] bg-contain bg-no-repeat scale-x-[-1]"></div>
         <NavBar />
         <Hero />
-        <section className='mx-[3%] flex flex-col lg:flex-row gap-5 justify-center mt-10 lg:mt-30'>
-          <div className='w-full lg:w-6/12 h-[250px] md:h-80 lg:h-auto rounded-(--border-radius) relative overflow-hidden bg-[url(/image/box.png)] bg-no-repeat bg-cover'>
-            <p className='absolute bottom-4 left-4 text-[20px] md:text-[32px]'>I prioritize client <br /> collaboration, fostering <br /> open communication </p>
-          </div>
-
-          <div className='w-full lg:w-5/12 flex gap-5 flex-col'>
-            <div className='relative rounded-(--border-radius) h-[170px] md:h-[230px] overflow-hidden opacity-80'
-              style={{ background: "var(--fill-gradient)" }}>
-              <img src='/image/Pagination.png' alt='' className='absolute bottom-0 left-0 w-full h-auto' />
-              <p className='absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 text-[14px] scale-160 sm:scale-200 md:scale-220'>I’m very flexible work</p>
-            </div>
-
-            <div className='relative rounded-(--border-radius) h-[150px] md:h-[230px] overflow-hidden opacity-90' style={{ background: "var(--fill-gradient)" }}>
-              <img src='/image/Group.png' alt='' className='absolute bottom-0 -right-4 lg:-right-16 xl:right-0 w-auto h-full'/>
-              <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-110' />
-              <p className='absolute top-1/2 -translate-y-1/2 left-5 text-[22px] sm:text-[24px] md:text-[26px] lg:text-[32px]'>My Tech Stack</p>
-            </div>
-          </div>
-        </section>
+        <Sec1 />
 
 
+        <section className='mx-[3%] sm:mx-auto mt-6 sm:mt-8 md:mt-15 lg:mt-20 mb-10'>
+          <h2 className='font-bold text-lg sm:text-2xl md:text-4xl lg:text-5xl text-center mb-3 sm:mb-4 md:mb-7 lg:mb-10'>A small selection of <span className='text-(--title-text)'>recent projects</span></h2>
 
-        <section className='mx-[3%] lg:mx-[6%] flex flex-col lg:flex-row gap-5 justify-center mt-5'>
-          <div className='order-2 w-full lg:w-3/12 flex gap-5 flex-col'>
-            <div className='relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden opacity-80'
-              style={{ background: "var(--fill-gradient)" }}>
-              <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-150' />
-              <img src='/image/sectionInput.png' alt='' className='absolute -bottom-10 -right-15 md:-right-1 lg:-right-13 w-auto h-full scale-50 md:scale-80 lg:scale-50' />
-              <p className='text-[18px] sm:text-[22px] md:text-[26px] lg:text-[16px] mt-6 sm:mt-10 md:mt-6 ml-4 lg:ml-4 md:w-[80%] lg:w-[90%] relative z-10'>Tech enthusiast with a passion for development.</p>
-            </div>
-
-            <div className='order-3 relative h-[125px] lg:h-[115px] rounded-(--border-radius) overflow-hidden'
-              style={{ background: "var(--fill-gradient)" }}>
-              <img src='/image/backgroundblobservicepng.png' alt='' className='absolute w-auto h-full' />
-              <p className='relative flex justify-center top-4 lg:top-3 text-[18px] sm:text-[24px] lg:text-[17px]'>Do you want to start <br className='sm:hidden lg:block' /> a project together?</p>
-              <div className='relative flex gap-3.5 justify-center items-center  -bottom-7 sm:-bottom-9 lg:-bottom-6 *:w-7 *:h-7 *:flex *:justify-center *:items-center *:rounded-[5px] *:cursor-pointer'>
-                <a className='border border-(--stoke-color)' href='https://github.com/hoseinmohammadi-dev'><Image src='/icon/Vector-2.svg' width={17} height={17} alt='social' /></a>
-                <a className='border border-(--stoke-color)' href='https://wa.me/989180888233'><Image src='/icon/Vector-3.svg' width={17} height={17} alt='social' /></a>
-                <a className='border border-(--stoke-color)' href='https://instagram.com/hoseinmdev'><Image src='/icon/Vector.svg' width={17} height={17} alt='social' /></a>
+          <section className='flex gap-5 justify-center flex-wrap'>
+            <div className='p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
+              <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
+                <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
+                <img src='/image/adminPanel.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75' />
               </div>
+              <h4 className='mt-2 text-[13px] sm:text-[18px] md:text-[14px] lg:text-[18px] font-bold'>Admin Dashboard – Smart Control Panel</h4>
+              <p className='mt-2 text-[12px] sm:text-[15px] md:text-[12px] lg:text-[15px] text-(--secondary-text)'>A sleek and modern control panel, crafted for <br /> clarity, ease of use, and precise management</p>
             </div>
-          </div>
 
-          <div className='order-1 lg:order-4 relative w-full lg:w-9/12 h-[150px] sm:h-[200px] md:h-[250px] rounded-(--border-radius) overflow-hidden'
-            style={{ background: "var(--fill-gradient)" }}>
-            <img src='/image/grid-pattern.svg' alt='' className='absolute bottom-0 left-0 w-auto h-full scale-150' />
-            <img src='/image/ImageCode.png' alt='' className='absolute -bottom-10 -right-10 lg:-bottom-10 lg:right-0 w-auto h-full scale-80 lg:scale-100' />
-            <div className='relative top-1/2 -translate-y-1/2 left-4'>
-              <p className='text-[8px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-light text-(--secondary-text)'>THE INSIDE SCOOP</p>
-              <p className='text-[18px] sm:text-[22px] md:text-[26px] lg:text-[32px]'>Constantly improving<br />crafting clean code</p>
+            <div className='p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
+              <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
+                <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
+                <img src='/image/shop.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 brightness-65' />
+              </div>
+              <h4 className='mt-2 text-[13px] sm:text-[18px] md:text-[14px] lg:text-[18px] font-bold'>Online Shop – Responsive E-Commerce</h4>
+              <p className='mt-2 text-[12px] sm:text-[15px] md:text-[12px] lg:text-[15px] text-(--secondary-text)'>A minimal store design focused on smooth <br /> browsing and clean product display .</p>
             </div>
-          </div>
+
+            <div className='p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
+              <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
+                <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
+                <img src='/image/musicPlayer.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75' />
+              </div>
+              <h4 className='mt-2 text-[13px] sm:text-[18px] md:text-[14px] lg:text-[18px] font-bold'>Music Player - Inspired by Radio Javan</h4>
+              <p className='mt-2 text-[12px] sm:text-[15px] md:text-[12px] lg:text-[15px] text-(--secondary-text)'>A stylish, responsive music player designed <br /> for smooth listening and clean UI.</p>
+            </div>
+
+            <div className='p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
+              <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
+                <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
+                <img src='/image/tapsi.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 brightness-65' />
+              </div>
+              <h4 className='mt-2 text-[13px] sm:text-[18px] md:text-[14px] lg:text-[18px] font-bold'>Tapsi Landing Page – Built with Tailwind</h4>
+              <p className='mt-2 text-[12px] sm:text-[15px] md:text-[12px] lg:text-[15px] text-(--secondary-text)'>Modern Tapsi clone built for all screen <br /> sizes, no JavaScript used .</p>
+            </div>
+          </section>
+
         </section>
       </main>
     </>

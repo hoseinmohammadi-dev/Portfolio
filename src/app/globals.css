@@ -7,6 +7,7 @@
   --title-text: #cbacf9;
   --link-text:#C1C2D3;
   --fill-gradient: linear-gradient(-49deg, #04071D, #0C0E23);
+  --fill-gradient-secondary: linear-gradient(49deg, #090e3160, #23274e4b);
   --stoke-color:#6971a237;
   --border-radius: 14px;
 }
