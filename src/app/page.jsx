@@ -3,7 +3,8 @@ import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import Sec1 from './components/Sec1'
 import Sec2 from './components/Sec2'
-import Footer from './components/footer'
+import Footer from './components/Footer'
+
 
 export default function HomePage() {
   
