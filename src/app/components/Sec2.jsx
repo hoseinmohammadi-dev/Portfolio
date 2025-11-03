@@ -11,7 +11,7 @@ export default function Sec2() {
                     <div className='p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
                         <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
                             <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
-                            <img src='/image/adminPanel.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75' />
+                            <img src='/image/adminPanel.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 xl:scale-90' />
                         </div>
                         <h4 className='mt-2 text-[13px] sm:text-[18px] md:text-[14px] lg:text-[18px] font-bold'>Admin Dashboard – Smart Control Panel</h4>
                         <p className='mt-0.5 text-[12px] sm:text-[15px] md:text-[12px] lg:text-[15px] text-(--secondary-text)'>A sleek and modern control panel, crafted for <br /> clarity, ease of use, and precise management</p>
@@ -33,7 +33,7 @@ export default function Sec2() {
                     <div className='p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
                         <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
                             <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
-                            <img src='/image/shop.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 brightness-65' />
+                            <img src='/image/shop.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 xl:scale-90 brightness-65' />
                         </div>
                         <h4 className='mt-2 text-[13px] sm:text-[18px] md:text-[14px] lg:text-[18px] font-bold'>Online Shop – Responsive E-Commerce</h4>
                         <p className='mt-0.5 text-[12px] sm:text-[15px] md:text-[12px] lg:text-[15px] text-(--secondary-text)'>A minimal store design focused on smooth <br /> browsing and clean product display .</p>
@@ -54,7 +54,7 @@ export default function Sec2() {
                     <div className='p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
                         <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
                             <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
-                            <img src='/image/tapsi.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 brightness-65' />
+                            <img src='/image/tapsi.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 xl:scale-90 brightness-65' />
                         </div>
                         <h4 className='mt-2 text-[13px] sm:text-[18px] md:text-[14px] lg:text-[18px] font-bold'>Tapsi Landing Page – Built with Tailwind</h4>
                         <p className='mt-0.5 text-[12px] sm:text-[15px] md:text-[12px] lg:text-[15px] text-(--secondary-text)'>Modern Tapsi clone built for all screen <br /> sizes, no JavaScript used .</p>
@@ -74,7 +74,7 @@ export default function Sec2() {
                     <div className='p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
                         <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
                             <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
-                            <img src='/image/musicPlayer.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75' />
+                            <img src='/image/musicPlayer.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 xl:scale-90' />
                         </div>
                         <h4 className='mt-2 text-[13px] sm:text-[18px] md:text-[14px] lg:text-[18px] font-bold'>Music Player - Inspired by Radio Javan</h4>
                         <p className='mt-0.5 text-[12px] sm:text-[15px] md:text-[12px] lg:text-[15px] text-(--secondary-text)'>A stylish, responsive music player designed <br /> for smooth listening and clean UI.</p>
