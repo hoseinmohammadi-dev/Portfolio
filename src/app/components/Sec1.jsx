@@ -4,7 +4,7 @@ import React from 'react'
 export default function Sec1() {
   return (
     <>
-     <section className='mx-[3%] flex flex-col lg:flex-row gap-5 justify-center mt-10 lg:mt-30'>
+     <section id='about' className='mx-[3%] flex flex-col lg:flex-row gap-5 justify-center mt-10 lg:mt-30'>
           <div className='w-full lg:w-6/12 h-[250px] md:h-80 lg:h-auto rounded-(--border-radius) relative overflow-hidden bg-[url(/image/box.png)] bg-no-repeat bg-cover'>
             <p className='absolute bottom-4 left-4 text-[20px] md:text-[32px]'>I prioritize client <br /> collaboration, fostering <br /> open communication </p>
           </div>
