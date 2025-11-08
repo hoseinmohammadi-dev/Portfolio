@@ -21,30 +21,32 @@ export const metadata = {
         alt: "Hosein Mohammadi",
       },
     ],
-  }
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Hosein Mohammadi",
-            "jobTitle": "Frontend Developer",
-            "url": "https://hoseinmdev.ir",
-            "image": "https://hoseinmdev.ir/profile.png",
-            "sameAs": [
-              "https://www.linkedin.com/in/hoseinmohammadi-dev/",
-              "https://github.com/hoseinmohammadi-dev",
-              "https://www.instagram.com/hoseinmdev/"
-            ]
-          }),
-        }}
-      />
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Hosein Mohammadi",
+              "jobTitle": "Frontend Developer",
+              "url": "https://hoseinmdev.ir",
+              "image": "https://hoseinmdev.ir/profile.png",
+              "sameAs": [
+                "https://www.linkedin.com/in/hoseinmohammadi-dev/",
+                "https://github.com/hoseinmohammadi-dev",
+                "https://www.instagram.com/hoseinmdev/"
+              ]
+            }),
+          }}
+        />
+      </head>
       <body className="bg-(--bg-color) w-full container mx-auto">
         {children}
       </body>
