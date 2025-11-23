@@ -1,4 +1,5 @@
 import React from 'react'
+import Animations from "./components/Animations"
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import Sec1 from './components/Sec1'
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Sec1 />
       <Sec2 />
       <Footer />
+      <Animations />
     </main>
   )
 }
