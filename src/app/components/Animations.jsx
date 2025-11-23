@@ -3,7 +3,9 @@
 import { useEffect } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import SplitText from "gsap/SplitText"
 
+gsap.registerPlugin(SplitText)
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Animations() {
@@ -38,6 +40,20 @@ export default function Animations() {
                     },
                 }
             )
+        })
+
+        const h1 = document.getElementById("hero-title")
+        if (!h1) return
+
+        const split = new SplitText(h1, { type: "chars" })
+        gsap.from(split.chars, {
+            y: 50,
+            opacity: 0,
+            rotationX: 20,
+            rotationY: 10,
+            stagger: 0.05,
+            duration: 1,
+            ease: "power3.out",
         })
 
     }, [])
