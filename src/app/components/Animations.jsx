@@ -5,8 +5,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import SplitText from "gsap/SplitText"
 
-gsap.registerPlugin(SplitText)
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger, SplitText)
 
 export default function Animations() {
     useEffect(() => {
@@ -52,9 +51,27 @@ export default function Animations() {
             rotationX: 20,
             rotationY: 10,
             stagger: 0.05,
-            duration: 1,
+            duration: 0.7,
             ease: "power3.out",
         })
+
+
+        const titles = gsap.utils.toArray(".scroll-title")
+
+        titles.forEach((title) => {
+            gsap.from(title, {
+                scrollTrigger: {
+                    trigger: title,
+                    start: "top bottom",
+                    toggleActions: "play none none reverse",
+                },
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out",
+            })
+        })
+
 
     }, [])
 
