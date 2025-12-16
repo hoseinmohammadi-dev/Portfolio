@@ -15,7 +15,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://hoseinmdev.ir/profile.png",
+        url: "/image/profile.jpg",
         width: 800,
         height: 800,
         alt: "Hosein Mohammadi",
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/image/profile.png" type="image/png" />
+        <link rel="icon" href="/image/profile.jpg" type="image/png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
               "name": "Hosein Mohammadi",
               "jobTitle": "Frontend Developer",
               "url": "https://hoseinmdev.ir",
-              "image": "https://hoseinmdev.ir/profile.png",
+              "image": "/image/profile.jpg",
               "sameAs": [
                 "https://www.linkedin.com/in/hoseinmohammadi-dev/",
                 "https://github.com/hoseinmohammadi-dev",
