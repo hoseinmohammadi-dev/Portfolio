@@ -1,45 +1,36 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 
+const navItems = ['hero', 'about', 'project', 'contact']
+
 export default function NavBar() {
   const [active, setActive] = useState('hero')
-
-  const navItems = ['hero', 'about', 'project', 'contact']
 
   const handleClick = (id) => {
     const section = document.getElementById(id)
     if (!section) return
-
     section.scrollIntoView({ behavior: 'smooth' })
   }
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition =
-        window.scrollY + window.innerHeight / 2
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 5) {
+        setActive(navItems[navItems.length - 1])
+        return
+      }
 
-      for (let i = 0; i < navItems.length; i++) {
+      for (let i = navItems.length - 1; i >= 0; i--) {
         const section = document.getElementById(navItems[i])
         if (!section) continue
 
-        const top = section.offsetTop
-        const height = section.offsetHeight
-
-        if (
-          scrollPosition >= top &&
-          scrollPosition < top + height
-        ) {
+        const { top } = section.getBoundingClientRect()
+        if (top <= window.innerHeight * 0.4) {
           setActive(navItems[i])
-          break
-        }
-
-        if (
-          window.innerHeight + window.scrollY >=
-          document.body.offsetHeight - 2
-        ) {
-          setActive(navItems[navItems.length - 1])
+          return
         }
       }
+
+      setActive(navItems[0])
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -51,7 +42,7 @@ export default function NavBar() {
   return (
     <section
       className="fixed z-50 -top-5 left-1/2 -translate-x-1/2 mx-auto mt-11 w-[85%] sm:w-[495px] h-[66px] rounded-(--border-radius) border border-(--stoke-color) py-5 px-3 sm:px-6 backdrop-blur-sm"
-      style={{ background: 'var(--fill-gradient)/99' }}
+      style={{ background: 'var(--fill-gradient)' }}
     >
       <ul className="flex justify-between text-(--link-text) text-[14px] sm:text-[16px]">
         {navItems.map((item) => (

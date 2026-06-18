@@ -5,7 +5,7 @@ export default function Sec2() {
     return (
         <>
             <section id='project' className='mx-[3%] sm:mx-auto mt-15 md:mt-30'>
-                <h2 className='scroll-title font-bold text-3xl md:text-4xl xl:text-5xl text-center mb-5 sm:mb-7 md:mb-10 lg:mb-14'>A small selection of <br  className='md:hidden'/><span className='text-(--title-text)'>recent projects</span></h2>
+                <h2 className='scroll-title font-bold text-3xl md:text-4xl xl:text-5xl text-center mb-5 sm:mb-7 md:mb-10 lg:mb-14'>A small selection of <br className='md:hidden' /><span className='text-(--title-text)'>recent projects</span></h2>
 
                 <section className='flex gap-5 justify-center flex-wrap'>
                     <div className='anim-text p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
@@ -30,7 +30,7 @@ export default function Sec2() {
                         </div>
                     </div>
 
-                    <div className='anim-text anim-text p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
+                    <div className='anim-text p-5 w-full md:w-7/16 rounded-(--border-radius)' style={{ background: "var(--fill-gradient)" }}>
                         <div className='relative w-full h-[180px] sm:h-[200px] md:h-[190px] lg:h-[220px] xl:h-[250px] rounded-(--border-radius) overflow-hidden' style={{ background: "var(--fill-gradient-secondary)" }}>
                             <img src='/image/bgRecentProject.png' alt='' className='absolute bottom-0 left-0 w-auto h-full' />
                             <img src='/image/shop.png' alt='' className='absolute -bottom-7 left-1/2 -translate-x-1/2 w-auto h-full scale-75 xl:scale-90 brightness-65' />
