@@ -1,13 +1,13 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "49332470",
+  title: "Hosein Mohammadi – Frontend Developer",
   description:
     "Portfolio website of Hosein Mohammadi, a passionate Frontend Developer. Explore projects, skills, and contact information.",
   keywords: ["Hosein Mohammadi", "hoseinmdev", "Frontend Developer", "Web Developer", "programmer"],
   authors: [{ name: "Hosein Mohammadi" }],
   openGraph: {
-    title: "49332470",
+    title: "Hosein Mohammadi – Frontend Developer",
     description:
       "Portfolio website of Hosein Mohammadi, a passionate Frontend Developer. Explore projects, skills, and contact information.",
     url: "https://hoseinmdev.ir",
@@ -28,7 +28,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="enamad" content="49332470" />
         <link rel="icon" href="/image/profile.jpg" type="image/png" />
         <script
           type="application/ld+json"
