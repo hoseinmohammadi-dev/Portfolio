@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Hosein Mohammadi – Frontend Developer",
+  title: "49332470",
   description:
     "Portfolio website of Hosein Mohammadi, a passionate Frontend Developer. Explore projects, skills, and contact information.",
   keywords: ["Hosein Mohammadi", "hoseinmdev", "Frontend Developer", "Web Developer", "programmer"],
@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="enamad" content="49332470" />
         <link rel="icon" href="/image/profile.jpg" type="image/png" />
         <script
           type="application/ld+json"
